@@ -1,6 +1,6 @@
 ## CQRS POC (Command Service)
 
-A Spring Boot POC using (and exploring) **CQRS** design/architectural pattern (Query approach).
+A Spring Boot POC using (and exploring) **CQRS** design/architectural pattern (**Command** approach).
 
 ### About
 
