@@ -8,9 +8,9 @@ This project explores the use of the **CQRS** (Command Query Responsibility Segr
 
 The idea, as directed by the pattern, is to segregate responsibilities. Below is an explanation of the two services implemented for this POC:
 
-#### Tech design:
+#### Tech Design:
 
-![Tech Design](src/main/resources/design/CQRS POC - Tech Design.png)
+![Tech Design](src/main/resources/design/CQRS%20POC%20-%20Tech%20Design.png)
 
 #### cqrs-command-service (this repo): 
 > This service writes (Command) to the database (Write databse). 
