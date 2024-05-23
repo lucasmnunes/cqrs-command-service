@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /order-command-service
+
+spring:
+  application:
+    name: order-command-service
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/cqrs-write-db
+    username: admin
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      spring:
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        value: org.springframework.kafka.support.serializer.JsonSerializer
